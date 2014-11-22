@@ -557,7 +557,7 @@ output_quoted_string (char *str)
 
 
 /*------------------------------------------------------------*/
-main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
   char *pdbfilename;
   mol3d *mol;
