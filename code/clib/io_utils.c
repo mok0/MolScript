@@ -100,7 +100,7 @@ io_fget_ds (FILE *file, dynstring *ds)
   assert (ds_valid_state (ds));
 
   ds_reset (ds);
-  while (ch = fgetc (file)) {
+  while ((ch = fgetc (file))) {
     if (ch == '\n') break;
     if (ch == EOF) break;
     ds_add (ds, ch);

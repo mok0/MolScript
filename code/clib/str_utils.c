@@ -286,7 +286,7 @@ str_hashcode (const char *str, const int range)
 
   while (*str) {
     h = (h << 4) + (*str++);
-    if (g = h & 0xf0000000) {
+    if ((g = h & 0xf0000000)) {
       h = h ^ (g >> 24);
       h = h ^ g;
     }
