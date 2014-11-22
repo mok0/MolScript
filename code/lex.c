@@ -563,7 +563,7 @@ get_string (void)
 
 unfinished:
   exit_on_error = TRUE;
-  yyerror ("unfinished quoted string");
+  return yyerror ("unfinished quoted string");
 }
 
 
